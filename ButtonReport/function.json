@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 30 8 * * *"
+    },
+    {
+      "name": "$return",
+      "apiKey": "sendgridapikey",
+      "to": "*******@gmail.com",
+      "from": "noreply@*******.com",
+      "subject": "security report",
+      "direction": "out",
+      "type": "sendGrid"
+    }
+  ]
+}
